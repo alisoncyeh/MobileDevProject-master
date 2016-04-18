@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.herbert.utapp.OptionsActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canvas"
+        android:id="@+id/buttonCanvas"
+        android:onClick="ButtonClick"
+        android:layout_marginBottom="63dp"
+        android:layout_above="@+id/buttonMaps"
+        android:layout_alignEnd="@+id/buttonMaps" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HornsLink"
+        android:id="@+id/buttonHornsLink"
+        android:onClick="ButtonClick"
+        android:layout_alignTop="@+id/buttonCanvas"
+        android:layout_toEndOf="@+id/buttonSettings" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:id="@+id/buttonMaps"
+        android:onClick="ButtonClick"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/buttonSettings" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandwidth"
+        android:id="@+id/buttonBandwidth"
+        android:onClick="ButtonClick"
+        android:layout_alignTop="@+id/buttonMaps"
+        android:layout_alignStart="@+id/buttonHornsLink" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:id="@+id/buttonSchedule"
+        android:onClick="ButtonClick"
+        android:layout_above="@+id/buttonSettings"
+        android:layout_alignEnd="@+id/buttonMaps"
+        android:layout_marginBottom="73dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Menu"
+        android:id="@+id/buttonFoodMenu"
+        android:onClick="ButtonClick"
+        android:layout_alignTop="@+id/buttonSchedule"
+        android:layout_alignStart="@+id/buttonBandwidth" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/buttonSettings"
+        android:onClick="ButtonClick"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UT Services App</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="buildings">
+        <item>Main Building</item>
+        <item>Welch Hall</item>
+        <item>RLM</item>
+        <item>Gregory Gym</item>
+    </string-array>
+
+</resources>
